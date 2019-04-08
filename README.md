@@ -1,6 +1,5 @@
-# README
-
 # Geo Location marker using google geocoder
+
 An api only application that allows CRUD operation arround google geocoding map location
 
 Implementations
@@ -12,7 +11,8 @@ Implementations
   - All the changes should be immediately visible on the map.
 
 ```
-## Implementations
+
+Implementations
  - build components LocationsContainer to show locations list and location component
  - LocationsContainer contains the basic operation to add a location which renders LocationForm to render a form
  - Location component contains the edit, delete, create and update operations
@@ -23,9 +23,11 @@ Implementations
  - Build the backend API in Ruby for allowing these CRUD operations for markers.
 
 ```
-##Implementations
+
+Implementations
  - Create an rails api only application 
- - expose api for CRUD operation for locations
+ - Include the create-react-app built in `part 1` to be a submodule for the api app for making easy for deployment
+ - Expose api for CRUD operation for locations
  - Location api uses geocoder library to fetch the latitude and longitude from google geocoder
  - geocoder library allows configuring the geocoding service details like the service provider to use, timeout, cache to
    use for geocoding, fallbacks for geocoding errors
