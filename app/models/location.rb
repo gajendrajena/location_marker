@@ -6,12 +6,7 @@ class Location < ApplicationRecord
   validates :address, presence: true
 
   def as_json(options={})
-    {
-      pos: {lat: self.latitude, lng: self.longitude},
-      id: self.id,
-      address: address,
-      latitude: latitude,
-      longitude: longitude
-    }
+    position = {lat: self.latitude, lng: self.longitude}
+    {id: self.id, pos: position, address: address, latitude: latitude, longitude: longitude}
   end
 end
