@@ -2,12 +2,12 @@
   "name": "location_marker",
   "license": "MIT",
   "engines": {
-    "node": "8.9.4",
-    "yarn": "1.6.0"
+    "node": "11.9.0",
+    "yarn": "1.15.2"
   },
   "scripts": {
-    "build": "yarn --cwd location_marker_client install && yarn --cwd client build",
-    "deploy": "cp -a client/build/. public/",
+    "build": "yarn --cwd location_marker_client install && yarn --cwd location_marker_client build",
+    "deploy": "cp -a location_marker_client/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
   }
 }
